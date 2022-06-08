@@ -16,8 +16,8 @@ curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_HTTPHEADER,
-            array("X-Api-Key:7534fcd3f37365b5621ab57b686e152b",
-                  "X-Auth-Token:8aee97a2c5b94163644a5676132aaa38"));
+            array("demo",
+                  "X-Auth-demo"));
 $payload = Array(
     'purpose' => 'Payment to '.$site_name[0]['site_name'],
     'amount' => $_POST['product_total'],
